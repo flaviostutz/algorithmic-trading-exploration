@@ -1,7 +1,7 @@
 FROM python:3.8.3-buster
 
 RUN apt-get update && apt-get install -y git
-RUN pip install pandas
+RUN pip install pandas matplotlib mplfinance
 
 # Jupyter
 RUN python3 -m pip --no-cache-dir install requests notebook ipywidgets && \
