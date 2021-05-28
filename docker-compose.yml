@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+
+  gitlab-cli-reports:
+    build: .
+    image: flaviostutz/algorithmic-trading-exploration
+    environment:
+      - JUPYTER_TOKEN=abc123
+    ports:
+      - 8888:8888
+    volumes: 
+      - ./notebooks:/notebooks
+    # command: sleep 99999
