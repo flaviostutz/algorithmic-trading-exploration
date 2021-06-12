@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
 
-  gitlab-cli-reports:
+  algorithmic-trading-exploration:
     build: .
     image: flaviostutz/algorithmic-trading-exploration
     environment:
